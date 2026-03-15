@@ -7,7 +7,7 @@ transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5
 train_data = datasets.MNIST(root='data', train=True, download=True, transform=transform)
 train_loader = torch.utils.data.DataLoader(train_data, batch_size=64, shuffle=True)
 
-# Simple feedforward neural network
+# Siimple feedforward neural network
 class SimpleNN(nn.Module):
     def __init__(self):
         super().__init__()
