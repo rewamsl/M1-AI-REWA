@@ -22,7 +22,7 @@ model = SimpleNN()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-# Training loop
+# Training loop1
 for images, labels in train_loader:
     optimizer.zero_grad()
     output = model(images)
